@@ -1,0 +1,56 @@
+Lake O'Hara Campsite
+https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?resourceId=-2147471963&bookingCategoryId=0&startDate=2024-07-01&endDate=2024-09-30&isReserving=true&equipmentCategoryId=-32768&subEquipmentCategoryId=-32768&partySize=1&numEquipment=1
+
+Lake O'Hara Bus:
+https://reservation.pc.gc.ca/api/availability/map?mapId=-2147483328&bookingCategoryId=10&equipmentCategoryId=null&subEquipmentCategoryId=null&cartUid=b7090070-221d-4506-9716-e65ed42addb0&cartTransactionUid=9b640168-7c62-4d1b-8af2-6477cdc1beea&bookingUid=9f5b3ec4-1e43-487a-b13d-801e2b4cf262&startDate=2024-07-01&endDate=2024-10-30&getDailyAvailability=true&isReserving=true&filterData=%5B%5D&boatLength=null&boatDraft=null&boatWidth=null&partySize=2&numEquipment=1&seed=2024-01-29T19:06:02.953Z
+resourceId: 
+-2147479230 = 08:30 Lake O'Hara Bus
+-2147479229 = 10:30 Lake O'Hara Bus
+-2147471963 = Lake O'Hara Campsite
+
+equipmentCategoryId=-32768 //tents
+subEquipmentCategoryId=-32768 //small tent
+subEquipmentCategoryId=-32767 //medium tent
+subEquipmentCategoryId=-32766 //large tent
+
+https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?resourceId=-2147479229&startDate=2024-01-01&endDate=2024-12-31
+
+https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?cartUid=ca080800-e0f8-4c4c-ada9-689e4ad8ee59&resourceId=-2147479229&bookingCategoryId=0&startDate=2024-07-01&endDate=2024-09-30&isReserving=true&equipmentCategoryId=-32768&subEquipmentCategoryId=-32768&boatLength=null&boatDraft=null&boatWidth=null&partySize=2&numEquipment=null&filterData=%5B%7B%22attributeDefinitionId%22:-32756,%22enumValues%22:%5B1%5D,%22attributeDefinitionDecimalValue%22:0,%22filterStrategy%22:0,%22attributeType%22:0%7D%5D&groupHoldUid=null&bookingUid=4c51ca0f-1cb9-41b3-b75f-5ecd9fd85627
+ 
+
+ "mapLinkAvailabilities": {
+        "-2147483629": [
+            7
+        ],
+        "-2147483626": [
+            1
+        ],
+        "-2147483622": [
+            0
+        ],
+        "-2147483611": [
+            1
+        ],
+        "-2147483606": [
+            1
+        ],
+        "-2147483602": [
+            0
+        ]
+    }
+
+- name: "Johnston Canyon"
+  resource_id: "-2147483629"
+- name: "Tunnel Mountain - Trailer Court"
+  resource_id: "-2147483626"
+- name: "Tunnel Mountain - Village 1"
+  resource_id: "-2147483622"
+- name: "Tunnel Mountain - Village 2"
+  resource_id: "-2147483611"
+- name: "Two Jack Lakeside"
+  resource_id: "-2147483606"
+- name: "Two Jack Main"
+  resource_id: "-2147483602"
+
+
+  https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?cartUid=ca080800-e0f8-4c4c-ada9-689e4ad8ee59&resourceId=-2147471963&bookingCategoryId=0&startDate=2024-07-01&endDate=2024-09-30&isReserving=true&equipmentCategoryId=-32768&subEquipmentCategoryId=-32768&boatLength=null&boatDraft=null&boatWidth=null&partySize=1&numEquipment=null&filterData=%5B%7B%22attributeDefinitionId%22:-32756,%22enumValues%22:%5B1%5D,%22attributeDefinitionDecimalValue%22:0,%22filterStrategy%22:0,%22attributeType%22:0%7D%5D&groupHoldUid=null&bookingUid=4c51ca0f-1cb9-41b3-b75f-5ecd9fd85627

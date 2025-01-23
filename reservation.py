@@ -3,8 +3,6 @@ from datetime import datetime, timedelta
 import requests
 import json
 
-from resource import load_park_resources
-
 BASE_API_URL = "https://reservation.pc.gc.ca/api/availability/resourcedailyavailability"
 HEADERS = {
     'Accept': '*/*',
@@ -86,13 +84,3 @@ class Reservation(object):
         except Exception as e:
             print('ERROR', e)
         return response
-
-
-if __name__ == "__main__":
-    parks = load_park_resources()
-    for park in parks:
-        print(park.name)
-        for resource in park.resources:
-            reservation = Reservation(resource.resource_id)
-            print(resource.name)
-            print(reservation.find_availability())
