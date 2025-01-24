@@ -1,5 +1,5 @@
 from enum import Enum
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import requests
 import json
 
@@ -28,13 +28,13 @@ def _format_date_to_string(date: datetime) -> str:
 
 
 def _start_of_year_utc():
-    current_year = datetime.utcnow().year
+    current_year = datetime.now(timezone.utc).year
     start_of_year = datetime(current_year, 1, 1, 0, 0, 0)
     return start_of_year
 
 
 def _end_of_year_utc():
-    current_year = datetime.utcnow().year
+    current_year = datetime.now(timezone.utc).year
     end_of_year = datetime(current_year, 12, 31, 0, 0, 0)
     return end_of_year
 
