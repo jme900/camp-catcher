@@ -11,14 +11,14 @@ parks:
     - name: "Lake O'Hara Bus"
       resources:
       - name: "08:30 Departure"
-        resource_id: "-2147479229"
+        id: "-2147479229"
       - name: "10:30 Departure"
-        resource_id: "-2147479230"
+        id: "-2147479230"
     - name: "Lake O'Hara Backcountry Camping"
-      resource_id: "-2147471963"
+      id: "-2147471963"
   - name: "Icefields Parkway"
     region_name: "Alberta"
     country_name: "Canada"
     resources:
     - name: "Rampart Creek"
-      resource_id: "-2147477491"
+      id: "-2147477491"

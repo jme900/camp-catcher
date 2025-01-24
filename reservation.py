@@ -40,8 +40,8 @@ def _end_of_year_utc():
 
 
 class Reservation(object):
-    def __init__(self, resource_id: str, start_day: datetime = None, end_day: datetime = None):
-        self.resource_id = resource_id
+    def __init__(self, id: str, start_day: datetime = None, end_day: datetime = None):
+        self.id = id
         if start_day is None:
             start_day = _start_of_year_utc()
         if end_day is None:
@@ -66,7 +66,7 @@ class Reservation(object):
 
     def __repr__(self):
         return (f"Reservation("
-                f"resource_id={self.resource_id}, "
+                f"id={self.id}, "
                 f"start_day={self.start_day_str}, "
                 f"end_day={self.end_day_str})"
                 )
@@ -76,7 +76,7 @@ class Reservation(object):
 
     def _connect(self):
         response = None
-        url = f"{BASE_API_URL}?resourceId={self.resource_id}&startDate={self.start_day_str}&endDate={self.end_day_str}"
+        url = f"{BASE_API_URL}?resourceId={self.id}&startDate={self.start_day_str}&endDate={self.end_day_str}"
         try:
             response = requests.get(url, headers=HEADERS)
             if response:

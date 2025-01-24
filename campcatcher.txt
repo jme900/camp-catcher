@@ -40,17 +40,17 @@ https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?cartUid=
     }
 
 - name: "Johnston Canyon"
-  resource_id: "-2147483629"
+  id: "-2147483629"
 - name: "Tunnel Mountain - Trailer Court"
-  resource_id: "-2147483626"
+  id: "-2147483626"
 - name: "Tunnel Mountain - Village 1"
-  resource_id: "-2147483622"
+  id: "-2147483622"
 - name: "Tunnel Mountain - Village 2"
-  resource_id: "-2147483611"
+  id: "-2147483611"
 - name: "Two Jack Lakeside"
-  resource_id: "-2147483606"
+  id: "-2147483606"
 - name: "Two Jack Main"
-  resource_id: "-2147483602"
+  id: "-2147483602"
 
 
   https://reservation.pc.gc.ca/api/availability/resourcedailyavailability?cartUid=ca080800-e0f8-4c4c-ada9-689e4ad8ee59&resourceId=-2147471963&bookingCategoryId=0&startDate=2024-07-01&endDate=2024-09-30&isReserving=true&equipmentCategoryId=-32768&subEquipmentCategoryId=-32768&boatLength=null&boatDraft=null&boatWidth=null&partySize=1&numEquipment=null&filterData=%5B%7B%22attributeDefinitionId%22:-32756,%22enumValues%22:%5B1%5D,%22attributeDefinitionDecimalValue%22:0,%22filterStrategy%22:0,%22attributeType%22:0%7D%5D&groupHoldUid=null&bookingUid=4c51ca0f-1cb9-41b3-b75f-5ecd9fd85627

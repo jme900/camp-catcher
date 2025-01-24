@@ -2,9 +2,9 @@ import yaml
 
 
 class Resource:
-    def __init__(self, name: str, resource_id: str):
+    def __init__(self, name: str, id: str):
         self.name = name
-        self.resource_id = resource_id
+        self.id = id
 
 
 class Park:
@@ -32,7 +32,7 @@ def _get_resources(data, resources=None, concat=""):
             else:
                 resource = Resource(
                     name=name,
-                    resource_id=resource_data['resource_id']
+                    id=resource_data['id']
                 )
                 resources.append(resource)
     return resources
