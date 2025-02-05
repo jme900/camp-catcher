@@ -1,5 +1,5 @@
 # camp-catcher
-Currently building an open-source Parks Canada site monitor for cancelations of popular sites in BC and Alberta.
+Currently building an open-source Parks Canada site monitor for cancellations of popular sites in BC and Alberta.
 # Camp Catcher Backend
 
 Camp Catcher Backend is a Python-based tool designed to continuously monitor Parks Canada's website for campsite availability updates. It serves as the backend component of the Camp Catcher project, which aims to provide timely notifications to users when popular campsites in British Columbia and Alberta (with plans to expand to other provinces) become available due to cancellations.
@@ -13,7 +13,6 @@ The primary purpose of the Camp Catcher Backend is to automate the process of mo
 - **Automated Monitoring**: Utilizes web scraping techniques to monitor Parks Canada's website for campsite availability updates.
 - **Real-time Notifications**: Sends instant notifications to users via various channels (e.g., email, SMS) when targeted campsites become available.
 - **Customizable Alerts**: Allows users to specify their preferred campsites and notification preferences for a personalized camping experience.
-- **Scalable Architecture**: Built with scalability in mind to accommodate future expansion to additional provinces and campsites.
 
 ## Usage
 
@@ -27,9 +26,16 @@ git clone https://github.com/your-username/camp-catcher-backend.git
 ```console
 pip install -r requirements.txt
 ```
-3. Configure environment variables:
+3. Configure environment variables (create a free Twilio account for SMS notifications):
 
-Create a `.env` file in the project root directory and specify the necessary environment variables, such as notification settings and web scraping parameters.
+Create a `.env` file in the project root directory and specify the following parameters. Ensure your phone numbers 
+are formatted correctly according to Twilio API documentation 
+```console
+TWILIO_SID=XXXXXXXXYYYYYYYYZZZZZZZZ
+TWILIO_KEY=XXXXXXXXYYYYYYYYZZZZZZZZ
+TWILIO_NUMBER=+10123456789
+PERSONAL_NUMBER=+19876543210
+```
 
 4. Run the backend service:
 ```console
